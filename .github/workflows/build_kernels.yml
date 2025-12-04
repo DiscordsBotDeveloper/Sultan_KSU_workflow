@@ -98,13 +98,9 @@ jobs:
               CONFIG_KSU_THRONE_TRACKER_ALWAYS_THREADED=y
         
         susfs: [false, true]
-        
-        # 使用 exclude 排除不需要的组合（与GKI一致）
-        exclude:
           # 排除 SukiSU 没有 SUSFS 的情况
           - build:
-              type: SukiSU
-            
+              type: SukiSU         
           
           # 排除 MKSU 
           - build:
